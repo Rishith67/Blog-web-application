@@ -1,0 +1,11 @@
+<%- include("header") %>
+<h1>Hello welcome to bloggie</h1>
+<% if(name && name.length > 0){ %>
+    <% for(let i=0; i<name.length; i++){ %>
+        <h2>User: <%= name[i] %></h2>
+        <p>Post: <%= data[i] %></p>
+    <% } %>
+<% } else { %>
+    <h1>There are no posts to display</h1>
+<% } %>
+<%- include("footer") %>

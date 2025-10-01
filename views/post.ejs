@@ -1,0 +1,8 @@
+<%- include("header") %>
+<h1>Enter The Blog you want to post</h1>
+<form action="/submit" method="POST">
+    <input type="text" name="user" placeholder="Enter your display name" required>
+    <input type="text" name="content" placeholder="Enter your story" required>
+    <button type="submit">Submit</button>
+</form>
+<%- include("footer") %>
